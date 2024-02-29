@@ -32,7 +32,9 @@ public class ilusionOptica extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel(){
             protected void paintComponent(Graphics g) {
                 super.paintComponent (g);
+                g.setColor(Color.CYAN);
                 g.drawLine(0,0, jPanel1.getWidth(), jPanel1.getHeight());
+                g.setColor(Color.LIGHT_GRAY);
                 g.drawLine(0,jPanel1.getHeight(), jPanel1.getWidth(),0);
                 g.setColor(Color.red);
                 g.drawLine(0,jPanel1.getHeight()/2, jPanel1.getWidth(),jPanel1.getHeight()/2);
@@ -70,7 +72,7 @@ public class ilusionOptica extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 333, Short.MAX_VALUE)
+            .addGap(0, 486, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
