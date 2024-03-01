@@ -206,7 +206,7 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent (g);&#xa;        int h = jPanel1.getHeight();&#xa;        int w = jPanel1.getWidth();&#xa;        for (int i = 0; i &lt;= w; i+=5){&#xa;            g.drawLine(i,h+i, i, i);&#xa;            //g.drawLine(w-i,h/2,w/2,i);&#xa;        }&#xa;    }&#xa;}"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent (g);&#xa;        int h = jPanel1.getHeight();&#xa;        int w = jPanel1.getWidth();&#xa;        for (int i = 0; i &lt;= w; i+=5){&#xa;            g.drawLine(i,h-i, i, i);&#xa;            g.drawLine(i,i,w-i,i);&#xa;        }&#xa;    }&#xa;}"/>
       </AuxValues>
 
       <Layout>

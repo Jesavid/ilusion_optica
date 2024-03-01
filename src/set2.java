@@ -119,8 +119,8 @@ public class set2 extends javax.swing.JFrame {
                 int h = jPanel1.getHeight();
                 int w = jPanel1.getWidth();
                 for (int i = 0; i <= w; i+=5){
-                    g.drawLine(i,h+i, i, i);
-                    //g.drawLine(w-i,h/2,w/2,i);
+                    g.drawLine(i,h-i, i, i);
+                    g.drawLine(i,i,w-i,i);
                 }
             }
         };
