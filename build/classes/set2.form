@@ -265,7 +265,7 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent (g);&#xa;        int h = jPanel1.getHeight();&#xa;        int w = jPanel1.getWidth();&#xa;        for (int i = 0; i &lt;= w/2; i+=5){&#xa;            g.drawLine(i,h-i, w/2, i);&#xa;            g.drawLine(w-i,h-i,w/2,i);&#xa;            g.drawLine(i,h-i,w-i,h-i);&#xa;        }&#xa;    }&#xa;}"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    protected void paintComponent(Graphics g) {&#xa;        super.paintComponent (g);&#xa;        int h = jPanel1.getHeight();&#xa;        int w = jPanel1.getWidth();&#xa;         int r = 10;&#xa;        for(int i = 0; i&lt;w;i+=10){&#xa;            //g.drawLine(0,i, jPanel7.getWidth()/2,jPanel7.getHeight()/2 );&#xa;            //g.drawLine(jPanel7.getWidth()/2,jPanel7.getHeight()/2, jPanel7.getWidth(), i);&#xa;            g.drawOval( (w-(r+i))/2, (h-(r+i))/2,r+i, r+i );&#xa;        }&#xa;    }&#xa;}"/>
       </AuxValues>
 
       <Layout>

@@ -141,10 +141,11 @@ public class set2 extends javax.swing.JFrame {
                 super.paintComponent (g);
                 int h = jPanel1.getHeight();
                 int w = jPanel1.getWidth();
-                for (int i = 0; i <= w/2; i+=5){
-                    g.drawLine(i,h-i, w/2, i);
-                    g.drawLine(w-i,h-i,w/2,i);
-                    g.drawLine(i,h-i,w-i,h-i);
+                int r = 10;
+                for(int i = 0; i<w;i+=10){
+                    //g.drawLine(0,i, jPanel7.getWidth()/2,jPanel7.getHeight()/2 );
+                    //g.drawLine(jPanel7.getWidth()/2,jPanel7.getHeight()/2, jPanel7.getWidth(), i);
+                    g.drawOval( (w-(r+i))/2, (h-(r+i))/2,r+i, r+i );
                 }
             }
         };
